@@ -1,15 +1,17 @@
 body {
-    background-color: #ffa0cc; /* Замените на желаемый цвет */
+    background-color: #ffa0cc; 
   }
-  .oval-container {
-    /*  Добавьте здесь стили для контейнера, если нужно */
-    display: inline-block; /* Или block, flex, grid - в зависимости от нужного размещения */
-  }
-  
-  .oval {
-    fill: lightblue;
-    stroke: purple;
-    stroke-width: 2;
-    opacity: 0.7; /* Устанавливает прозрачность */
-  }
+
+.oval transparament {
+    border: none; /* Обводка для изображений */
+    width: 10px;
+    height: 10px;
+}
+
+.oval notransparament {
+  border: none;
+  width: 1px;
+  height: 1px;
+}
+
   
