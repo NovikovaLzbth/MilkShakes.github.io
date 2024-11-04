@@ -2,16 +2,23 @@ body {
     background-color: #ffa0cc; 
   }
 
-.oval transparament {
-    border: none; /* Обводка для изображений */
-    width: 10px;
-    height: 10px;
+#transparament {
+  max-width: 10000px;
+  border: none; /* Обводка для изображений */
+  width: 1200px;
+  height: auto;
+  display: inline-block;
+  margin-top: -630px;
+  margin-left: -300px;
+  transform: rotate(-15deg);
 }
 
-.oval notransparament {
+#notransparament {
+  max-width: 10000px;
   border: none;
-  width: 1px;
-  height: 1px;
+  width: 1000px;
+  height: auto;
+  display: inline-block;
 }
 
   
