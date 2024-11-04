@@ -1,3 +1,15 @@
 body {
     background-color: #ffa0cc; /* Замените на желаемый цвет */
   }
+  .oval-container {
+    /*  Добавьте здесь стили для контейнера, если нужно */
+    display: inline-block; /* Или block, flex, grid - в зависимости от нужного размещения */
+  }
+  
+  .oval {
+    fill: lightblue;
+    stroke: purple;
+    stroke-width: 2;
+    opacity: 0.7; /* Устанавливает прозрачность */
+  }
+  
