@@ -8,9 +8,9 @@ body {
   width: 1200px;
   height: auto;
   display: inline-block;
-  margin-top: -630px;
+  margin-top: -610px;
   margin-left: -300px;
-  transform: rotate(-15deg);
+  transform: rotate(-12deg);
 }
 
 #notransparament {
