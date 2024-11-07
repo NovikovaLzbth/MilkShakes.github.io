@@ -1,24 +1,82 @@
 body {
-    background-color: #ffa0cc; 
-  }
-
-#transparament {
-  max-width: 10000px;
-  border: none; /* Обводка для изображений */
-  width: 1200px;
-  height: auto;
-  display: inline-block;
-  margin-top: -610px;
-  margin-left: -300px;
-  transform: rotate(-12deg);
+    margin: 0px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#notransparament {
-  max-width: 10000px;
+.container {
+  max-width: 1050px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 20px; /* Отступы внутри контейнера */
+  background-color: #fa9fc8; 
+  height: 700px;
+  background-image: linear-gradient(to left, rgba(248, 52, 140, 0) 20%, rgba(166, 2, 76, 0.8) 100%); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#inscription {
+  position: absolute;
+}
+
+
+h1 {
+  font-size: 4.5em;
+  color: #efefef;
+  margin-left: 110px;
+  margin-top: 50px;
+}
+
+#OrderNow {
+  margin-top: 540px;
+  margin-left: 110px;
   border: none;
-  width: 1000px;
-  height: auto;
+  background-color: #cdc3c2;
+  padding: 15px 32px; /* Размер кнопки */
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: 18.5px;
+  border-radius: 18.5px; /* Закругленные углы */
+  transition: background-color 0.3s ease, transform 1s ease, ;
+  cursor: pointer;
+  box-shadow: 13px 13px 18px rgba(0,0,0,0.3);
+  color: #382e31;
+  
+}
+#OrderNow:active {
+  background-color: #b3a3a0;
+  transform: scale(0.95);
 }
 
-  
+#description {
+  position: relative;
+  max-width: 412px;
+  text-align: justify;
+  color: #efefef;
+  margin-top: -246px;
+  margin-left: 110px;
+}
+
+#icon1 {
+  position: absolute;
+  max-width: 497px;
+  height: auto;
+  margin-top: -480px;
+  margin-left: 550px;
+}
+#icon3 {
+  position: absolute;
+  max-width: 320px;
+  height: auto;
+  margin-top: -430px;
+  margin-left: 242px;
+  transform: rotate(36deg);
+}
+#icon2 {
+  position: absolute;
+  max-width: 320px;
+  height: auto;
+  margin-top: -460px;
+  margin-left: 100px;
+  transform: scaleX(-1);
+}
