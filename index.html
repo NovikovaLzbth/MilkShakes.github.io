@@ -7,53 +7,68 @@
 </head>
 <body>
     <div class="container">
-        <div id="inscription">
-            <h1>Shake<br>It<br>Up<h1>
-        </div>
-
-        <button id="OrderNow">Заказать сейчас</button>
-
-        <p id="description">Побалуйте себя настоящим наслаждением!  Наши молочные коктейли – это взрыв вкуса и аромата, приготовленные из самых свежих ингредиентов.  Забудьте о будничной рутине и окунитесь в мир сладких грёз! Закажите свой идеальный коктейль прямо сейчас!</p>
-
-        <img src="drawebles/pngwing.com.png" alt="" id="icon1">
-        <img src="drawebles/pngwing.com (2).png" alt="" id="icon3">
-        <img src="drawebles/pngwing.com (1).png" alt="" id="icon2">
-
-        <div id="myModal" class="modal">
-            <div id="myModal-content" class="modal-content">
-              <span class="close">&times;</span>
-              <p id="Message">Закажите свой идеальный коктейль прямо сейчас!</p>
-
-              <form id="orderForm">
-                <input type="text" id="name" name="name" placeholder="Ваше имя"><br>
-
-                <input type="tel" id="phone" name="phone" placeholder="Контактный телефон"><br>
-
-                <input type="email" id="email" name="email" placeholder="Email"><br>
-
-                <label for="cocktail" id="Cocktaill">Выберите коктейль:</label><br>
-                <select id="cocktail" name="cocktail">
-                  <option value="MilkyWay">Млечный Путь</option>
-                  <option value="Chocolate">Шоколадный Экспресс</option>
-                  <option value="Strawberry">Клубничная Симфония</option>
-                  <option value="Vanil">Ванильная Нежность</option>
-                  <option value="Caramel">Карамельный Закат</option>
-                </select><br>
-
-                <label for="delivery" id="deliveryy">Способ доставки:</label><br>
-                <select id="delivery" name="delivery">
-                  <option value="pickup">Самовывоз</option>
-                  <option value="delivery">Доставка</option>
-                </select><br>
-                
-                <input type="text" id="address"placeholder="Адрес" name="address" style="display:none;"><br>
-
-                <input type="submit" value="Заказать" id="Order">
-              </form>
+        
+        <div class="tab-content">
+          <div id="tab1" class="tab active">
+            <div id="inscription">
+              <h1>Shake<br>It<br>Up<h1>
+          </div>
+  
+          <button id="OrderNow">Заказать сейчас</button>
+  
+          <p id="description">Побалуйте себя настоящим наслаждением!  Наши молочные коктейли – это взрыв вкуса и аромата, приготовленные из самых свежих ингредиентов.  Забудьте о будничной рутине и окунитесь в мир сладких грёз! Закажите свой идеальный коктейль прямо сейчас!</p>
+  
+          <img src="drawebles/pngwing.com.png" alt="" id="icon1">
+          <img src="drawebles/pngwing.com (2).png" alt="" id="icon3">
+          <img src="drawebles/pngwing.com (1).png" alt="" id="icon2">
+  
+          <div id="myModal" class="modal">
+              <div id="myModal-content" class="modal-content">
+                <span class="close">&times;</span>
+                <p id="Message">Закажите свой идеальный коктейль прямо сейчас!</p>
+  
+                <form id="orderForm">
+                  <input type="text" id="name" name="name" placeholder="Ваше имя"><br>
+  
+                  <input type="tel" id="phone" name="phone" placeholder="Контактный телефон"><br>
+  
+                  <input type="email" id="email" name="email" placeholder="Email"><br>
+  
+                  <label for="cocktail" id="Cocktaill">Выберите коктейль:</label><br>
+                  <select id="cocktail" name="cocktail">
+                    <option value="MilkyWay">Млечный Путь</option>
+                    <option value="Chocolate">Шоколадный Экспресс</option>
+                    <option value="Strawberry">Клубничная Симфония</option>
+                    <option value="Vanil">Ванильная Нежность</option>
+                    <option value="Caramel">Карамельный Закат</option>
+                  </select><br>
+  
+                  <label for="delivery" id="deliveryy">Способ доставки:</label><br>
+                  <select id="delivery" name="delivery">
+                    <option value="pickup">Самовывоз</option>
+                    <option value="delivery">Доставка</option>
+                  </select><br>
+                  
+                  <input type="text" id="address"placeholder="Адрес" name="address" style="display:none;"><br>
+  
+                  <input type="submit" value="Заказать" id="Order">
+                </form>
+              </div>
+            </div>
             </div>
           </div>
           </div>
+          <div id="tab2" class="tab">
+            <h2>Раздел 2: Содержимое раздела 2</h2>
+            <p>Здесь находится текст второго раздела.</p>
+          </div>
         </div>
+
+        <div class="tab-container">
+          <button class="tab-button active" data-tab="tab1">Главная страница</button>
+          <button class="tab-button" data-tab="tab2">Меню</button>
+        </div>
+        
         <script src="script.js"></script>
     <div>
 
