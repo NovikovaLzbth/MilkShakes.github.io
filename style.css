@@ -296,7 +296,31 @@ h1 {
   font-weight: 500;
 }
 
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block; /* Show the active tab */
+}
+
+#inscription2 {
+  position: absolute;
+  margin-top: -720px;
+  margin-left: 150px;
+}
+
+#tab2 {
+  position: fixed;
+  background-color: #efefef;
+  width: 1090px;
+  height: 900px;
+  margin-top: -740px;
+  margin-left: 223px;
+}
+
 .tab-container {
+  position: absolute;
   margin-top: -720px;
   margin-left: 1040px;
   display: flex;
@@ -319,12 +343,3 @@ h1 {
   background-color: #e83272; 
   color: #efefef;
 }
-
-.tab {
-  display: none;
-}
-
-.tab.active {
-  display: block; /* Show the active tab */
-}
-

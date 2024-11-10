@@ -57,19 +57,26 @@ orderForm.addEventListener('submit', (event) => {
 });
 
 
-tabButtons.forEach(button => {
+// script.js
+document.querySelectorAll('.tab-button').forEach(button => {
   button.addEventListener('click', () => {
-    const tabId = button.dataset.tab;
+      const tabId = button.getAttribute('data-tab');
 
-    tabButtons.forEach(btn => btn.classList.remove('active'));
+      // Скрыть все вкладки
+      document.querySelectorAll('.tab').forEach(tab => {
+          tab.classList.remove('active');
+      });
 
-    button.classList.add('active');
+      // Показать выбранную вкладку
+      document.getElementById(tabId).classList.add('active');
 
-    tabContents.forEach(content => content.classList.remove('active'));
+      // Удалить класс активности у всех кнопок
+      document.querySelectorAll('.tab-button').forEach(btn => {
+          btn.classList.remove('active');
+      });
 
-    document.getElementById(tabId).classList.add('active');
+      // Добавить класс активности к нажатой кнопке
+      button.classList.add('active');
   });
 });
 
-// Activate the first tab by default
-tabButtons[0].click();
